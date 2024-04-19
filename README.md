@@ -36,15 +36,25 @@ Features
 The various features of the cleaned dataset are explained below:
 
 Airline: This categorical feature denotes the name of the airline company, with six distinct airlines.
+
 Flight: Another categorical feature, it stores the flight code information.
+
 Source City: Categorical, representing the city from which the flight originates, with six unique cities.
+
 Departure Time: This derived categorical feature groups departure times into bins, offering six unique time labels.
+
 Stops: Categorical, indicating the number of stops between the source and destination cities, with three distinct values.
+
 Arrival Time: A derived categorical feature, grouping arrival times into bins with six distinct labels.
+
 Destination City: City where the flight will land. It is a categorical feature having 6 unique cities.
+
 Class: A categorical feature defining the seat class as either Business or Economy.
+
 Duration: A continuous feature that displays the overall amount of time it takes to travel between cities in hours.
+
 Days Left: This derived feature is calculated by subtracting the booking date from the trip date.
+
 Price: The target variable, storing the ticket price information.
 
 2) Exploratory Data Analysis
