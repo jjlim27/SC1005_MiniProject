@@ -9,13 +9,19 @@ Problem Statement: How do factors such as the choice of airline, timing of ticke
 To structure our investigation effectively, we've segmented our primary question into **six** distinct sub-questions, each designed to explore a specific aspect of our overall inquiry:
 
 a) Are ticket prices influenced by the flight's departure and arrival times? 
+
 b) Is there a variation in ticket prices across different airlines? 
+
 c) In what ways do ticket prices differ between Economy and Business class? 
+
 d) How does altering the flight's origin and destination affect the price? 
+
 e) Does a flight's duration play a role in varying the price?
+
 f) Does the number of remaining days play a role in varying the price of flight tickets?
 
 1) Data Cleaning and Transformation
+   
 Before proceeding with our exploratory analysis, we first drop useless columns that are not relevant or useful to researching our problem statement.
 
 Columns to drop:
@@ -42,6 +48,7 @@ Days Left: This derived feature is calculated by subtracting the booking date fr
 Price: The target variable, storing the ticket price information.
 
 2) Exploratory Data Analysis
+   
 We explored the data by viewing which data is categorical and numerical based on its type. Next, we made a through numerical analysis by analysing its numerical variables, duration, days left and price.
 We gathered that:
 Average Price of flights dataset is 7425, and the maximum price are 123071 and the minimum price are 1105.
@@ -59,6 +66,7 @@ We gathered that:
 The  skewness values provide insights into the shape of the data distributions: 'duration' and 'price' exhibit right-skewed or positive skewed distributions, with longer tails on the right and data concentrated on the left. 'days_Left' has a skewness value close to zero, indicating a nearly symmetric distribution, which means the data is relatively balanced without strong skewness in either direction
 
 Next, we made a Correlation Analysis between the three numerical variables, durations, day left and price. 
+
 We gathered that:
 There is little to no linear correlation between the three numerical variables.
 
