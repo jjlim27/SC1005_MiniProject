@@ -1,7 +1,10 @@
 Project Group: FCSD Group 10
+
 Lim Jun Jie (U2323401A)- Coding + Slides
+
 Toh Hong (U2321363A) - Coding + Slides
-Yuvraj (U2323724E) - Slides
+
+Singh Yuvraj (U2323724E) - Slides
 
 Hi there! Welcome to our team's project - Predicting Airline Prices!
 
