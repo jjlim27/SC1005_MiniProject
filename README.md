@@ -60,44 +60,61 @@ Price: The target variable, storing the ticket price information.
 2) Exploratory Data Analysis
    
 We explored the data by viewing which data is categorical and numerical based on its type. Next, we made a through numerical analysis by analysing its numerical variables, duration, days left and price.
+
 We gathered that:
+
 Average Price of flights dataset is 7425, and the maximum price are 123071 and the minimum price are 1105.
+
 Average Days Left of flights is 26, and the maximum days left are 49 and the minimum days left are 1.
+
 Average Duration of flights is 11.2, and the maximum duration is 49.8 and the minimum duration is 0.8.
 
 We plotted a boxplot to analysise the median, mean and counted the outliers for each of the numerical variables. 
 We gathered that:
+
 Duration has 2110 outliers.
+
 Days Left has 0 outliers.
+
 Price has 123 outliers.
 
 Next, we made a Skewness Analysis on the numerical variables, durations, days left and price. 
+
 We gathered that: 
+
 The  skewness values provide insights into the shape of the data distributions: 'duration' and 'price' exhibit right-skewed or positive skewed distributions, with longer tails on the right and data concentrated on the left. 'days_Left' has a skewness value close to zero, indicating a nearly symmetric distribution, which means the data is relatively balanced without strong skewness in either direction
 
 Next, we made a Correlation Analysis between the three numerical variables, durations, day left and price. 
 
 We gathered that:
+
 There is little to no linear correlation between the three numerical variables.
 
 We began our analysation on our problem statement, figuring out the relationship between ticket prices and other variables from the visualisation of airline ticket price data vs other variables.
 a) Are ticket prices influenced by the flight's departure and arrival times?
+
 Analysis: The box plot indicates that leaving late at night or arriving at night remains the most cost-effective option. It's also visible that arriving early morning is also cheap and afternoon flights are a bit cheaper than evening, morning and night flights.
 
 b) Is there a variation in ticket prices across different airlines?
+
 Analysis: Among the airlines, Air India and Vistara is having the most expensive flight tickets, whereas AirAsia provides the most affordable fares. Specifically, in the context of business class, Vistara's prices are the highest in comparison to AirAsia, SpiceJet, AirAsia, GO_First and Indigo seems to have around the same flight prices.
 
 c) In what ways do ticket prices differ between Economy and Business class?
+
 Analysis: Only two companies, Air India and Vistara, offer business flights, and there exists a substantial price difference between the two classes, with business tickets costing nearly five times as much as economy tickets. Business class typically offers enhanced services and amenities compared to economy class, such as more comfortable seating, premium meals, dedicated check-in counters, priority boarding, and additional space, which explains why there is a big gap in the prices of ticket between economy and business class.
 
 d) How does altering the flight's origin and destination affect the price?
+
 Analysis: It appears that flights departing from Delhi are frequently more affordable compared to those from other departure cities, likely due to the fact that as a capital city which is most likely to be larger and offers a greater variety of flights. Flights leaving and arriving at Bangalore seems to be highly priced. On the other hand, overall prices are relatively consistent, with Hyderabad emerging as the most expensive destination.
 
 e) Does a flight's duration play a role in varying the price?
+
 Analysis: It is visible in the above that with the increase in duration, ticket price also increases for both economy and business classes. This is likely due to the fact that long flights typically require more fuel consumption, which is a significant operational cost for airlines. As the flight duration increases, so does the fuel consumption, leading to higher operating expenses. Airlines often pass on these increased costs to passengers through higher ticket prices.
 
 f) Does the number of remaining days play a role in varying the price of flight tickets?
-Analysis: As we can see when compared to others when there are two days remaining for departure then the Ticket Price is very High for all airlines. The graph highlights how the prices rise slowly and then drastically start rising 20 days before the flight, but fall just one day before the flight up to three times cheaper. This pattern suggests that airlines may reduce ticket prices close to the departure date to fill empty seats and ensure high occupancy on their planes.
+
+Analysis: As we can see when compared to others when there are two days remaining for departure then the Ticket Price is very High for all airlines. The graph highlights how the prices rise slowly and then drastically start rising 20 days before the flight, but fall just one day before 
+the flight up to three times cheaper. This pattern suggests that airlines may reduce ticket prices close to the departure date to fill empty seats and ensure high occupancy on their planes.
 
 We begin the Machine Learning Portion of our project. Our primary objective is to build a predictive model that can accurately forecast the prices of flights. By predicting flight prices, you aim to provide valuable insights to travelers, airlines, travel agencies, and other stakeholders in the aviation industry Predicting flight prices can help travelers make informed decisions about booking flights, optimizing their travel budgets, and finding the best deals. In today's world, where travel has become an integral part of our lives, finding affordable flight tickets is essential. Factors like airline type, flight details, departure time, and more play a crucial role in determining ticket prices. Therefore, we'll leverage these variables to predict flight prices using machine learning models.
 
@@ -116,6 +133,7 @@ Hence to improve machine learning further, we carry out random forest.  We chose
 In summary, Random Forest emerges as a powerful tool for predicting airline prices, offering high accuracy, robustness, and the ability to handle diverse features effectively. Its performance in explaining the variance in flight prices, as evidenced by the high R-squared value and low prediction errors, underscores its suitability for our problem statement.
 
 In conclusion, based on these results:
+
 The Random Forest model appears to be the most suitable for predicting airline prices, as it achieves the highest R-squared value and lowest prediction errors (MAE and MSE). Linear Regression also performs reasonably well but exhibits higher prediction errors compared to Random Forest. The Support Vector Machine model performs poorly in predicting airline prices compared to the other models. Therefore, as our goal is to accurately predict airline prices, the Random Forest model would be the preferred choice among the models evaluated in this analysis.
 
 As such, we begin training the Random forest model using the best hyperparameters we obtained earlier. After training, we make predictions on the testing data using the trained model to obtain insights into regression. We obtained an R2 value of 0.98, an MAE of 1329, and an MSE of 9642796.
