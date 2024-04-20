@@ -1,3 +1,8 @@
+Project Group: FCSD Group 10
+Lim Jun Jie (U2323401A)- Coding + Slides
+Toh Hong (U2321363A) - Coding + Slides
+Yuvraj (U2323724E) - Slides
+
 Hi there! Welcome to our team's project - Predicting Airline Prices!
 
 In the modern era, where traveling has become a fundamental aspect of our lives, finding the most affordable flight tickets is crucial. The cost of flights fluctuates based on various factors, such as the airlines, timing of booking, departure schedules, and seating classes. For those looking to navigate their travels economically and efficiently, grasping the complex pricing patterns of airline tickets is essential. This project sets out to explore the complex dynamics behind flight pricing, utilizing an extensive flight dataset. Our goal is to not only predict the prices of flights with precision but also to discover insights that will aid travelers in their search for cost-effective and convenient travel solutions. This project utilizes a dataset which encompasses 300,261 unique flight booking alternatives, covering a timeframe of 50 days, from February 11th to March 31st, 2022. It has been compiled to facilitate data analysis and the development of predictive models for accurate flight price forecasting.
