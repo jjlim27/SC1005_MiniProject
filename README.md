@@ -1,3 +1,5 @@
+** NOTE: Github sometimes have an error that shows "Unable to render code block" when you attempt to view our code in Github. Please download the raw file of our .pynb file and open it in your IDE to view the code. Thank you
+
 Project Group: FCSD Group 10
 
 Lim Jun Jie (U2323401A)- Coding + Slides
